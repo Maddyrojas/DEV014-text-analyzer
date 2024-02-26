@@ -1,0 +1,26 @@
+.cuadro{
+    size: 10px;/*especificar ancho del cuadrado del texto*/
+    /*max-lines: 3;*/
+    border-radius: 25%;
+    border-style: dashed;
+    height: 150px;
+    width: 1080px;
+    font-size: 40px;
+}
+
+.border_div{
+    background: #ff00c4;
+    
+    border: 1px solid black;
+    padding: 200px;
+    /*align-items: initial;Para textos*/
+    display: inline-block;
+    text-align: center; /*Para objetos como botones*/
+    /*justify-content: center;para todo lo que contiene*/
+}
+
+.buttonLimpiar{
+    border-style: double;
+
+    font-size: 20px;
+}
