@@ -2,12 +2,14 @@ import analyzer from './analyzer.js';
 
 
 const areaTexto = document.querySelector("textarea");
+
 const palabra = document.querySelector('li[data-testid=word-count]');
 const caracteres = document.querySelector('li[data-testid=character-count]');
 const caracteresSinEspacios = document.querySelector('li[data-testid=character-no-spaces-count]');
 const numeros = document.querySelector('li[data-testid=number-count]');
 const suma = document.querySelector('li[data-testid=number-sum]');
 const longitudMedia = document.querySelector('li[data-testid=word-length-average]');
+
 const button = document.getElementById("reset-button");
 
 areaTexto.addEventListener("input", function(){

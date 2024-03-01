@@ -8,9 +8,16 @@
 </head>
 
 <body>
+  <div name="page-top"> 
+  </div>
   <header>
     <h1>Analizador de Texto</h1>
   </header>
+  <main>
+  <p><button id="reset-button">Refrescar cuadro de texto</button></p> 
+  <div name="textarea">
+    <textarea name="user-input" ></textarea>
+  </div>
   <script src="index.js" type="module"></script>
     <ul>
       <li class="li" data-testid="word-count">Cantidad Palabras: 0</li>
@@ -20,12 +27,11 @@
       <li class="li" data-testid="number-sum">Suma de Numeros: 0</li>
       <li class="li" data-testid="word-length-average">Longitud Media: 0</li>
     </ul>
-      <textarea name="user-input" ></textarea>
-    <p><button id="reset-button">Limpiar</button></p> 
+  </main>  
   <footer>
-    
+    <p>
       MADELYN ROJAS MOYA
-    
+    </p>
   </footer>
 </body>
 </html>
