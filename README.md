@@ -23,6 +23,7 @@ Como bien se menciona anteriormente la aplicacion muestras resultados inmediatos
 
 ← #1 Cantidad Palabras
 
+Recibimos todo el texto que el usuario ingresa y lo separamos en palabras sin tomar encuenta ningun espacios ni vacio.
 ```
 getWordCount: (text) => {
     const palabra=text.toString();
@@ -39,6 +40,7 @@ getWordCount: (text) => {
 
 ← #2 Cantidad Carácteres
 
+Recibimos todo el texto que el usuario ingresa y mostramos el total de carácteres
 ```
 getCharacterCount: (text) => {
     return text.length;
@@ -47,6 +49,7 @@ getCharacterCount: (text) => {
 
 ← #3 Cantidad Carácteres Sin Espacios
 
+Recibimos todo el texto que el usuario ingresa y mostramos el total de carácteres sin espacios ni signos de puntuacion, esto lo logramos excluyendo los espacios y dichos caracteres.
 ```
 getCharacterCountExcludingSpaces: (text) => {
     const simbolosDePuntuacion = ",.!?;:(){}[]$&\"'¡¿`-—_…";
@@ -64,6 +67,7 @@ getCharacterCountExcludingSpaces: (text) => {
 
 ← #4 Cantidad Numeros
 
+Recibimos todo el texto que el usuario ingresa y mostramos la cantidad de números que contiene el texto, para esto verificamos que los numeros no este a la par de palabras, tambien si son numero con decimales.
 ```
 getNumberCount: (text) => {
     const cantidadNumero = [];
@@ -123,6 +127,7 @@ getNumberCount: (text) => {
 
 ← #5 Suma de Numeros
 
+Recibimos todo el texto que el usuario ingresa y mostramos la suma de todos los números validos que contiene el texto, para esto verificamos que los numeros no este a la par de palabras, tambien si son numero con decimales.
 ```
 getNumberSum: (text) => {
     let sumaTotal = 0;
@@ -178,13 +183,14 @@ getNumberSum: (text) => {
           }
         }
       }
-    }//for 
+    }
     return sumaTotal;
   }
 ```
 
 ← #6 Longitud Media
 
+Recibimos todo el texto que el usuario ingresa y mostramos una longitud promedio la cual logramos al dividir el total de los caracteres que hay de todas las palabras, entre el total de palabras y solo permitir 2 decimales
 ```
 getAverageWordLength: (text) => {
     const aregloPalabras = [];
@@ -210,6 +216,9 @@ getAverageWordLength: (text) => {
       }
       promedio=(todasPalabras.length/aregloPalabras.length).toFixed(2);
       return +promedio;
+    }
+    else{
+      return 0;
     }
   }
 ```

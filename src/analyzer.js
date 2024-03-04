@@ -1,11 +1,10 @@
 const analyzer = {  
   //recuento de palabras
   getWordCount: (text) => {
-    const palabra=text.toString();
-    const aregloPalabras = palabra.split(" ");
+    const aregloPalabras = text.split(" ");
     let contadorPalabras = 0;
     for (let i = 0; i < aregloPalabras.length; i++) {
-      if (aregloPalabras[i]!==" ") { 
+      if (aregloPalabras[i]!==" " && aregloPalabras[i]!=="") { //si es diferente a espacio y a vacio quiero que cuente las palabras
         contadorPalabras = contadorPalabras+1;
       }
     }
@@ -57,6 +56,9 @@ const analyzer = {
       }
       promedio=(todasPalabras.length/aregloPalabras.length).toFixed(2);
       return +promedio;
+    }
+    else{
+      return 0;
     }
   },
   //cantidad de números
