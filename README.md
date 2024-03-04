@@ -12,7 +12,7 @@ En esta ventanas el usuario podrá ingresar cualquier texto que desee y podra ve
 Además, el usuario tendrá disponible un boton con el cual podra refrescar el cuadro de texto y los resultados anteriores para volver a ingresar otro texto, si así lo desea.
 
 Puedes acceder directamente con el siguiente enlace:
-[Blank Website](https://maddyrojas.github.io/DEV014-text-analyzer/src/)
+[App Website](https://maddyrojas.github.io/DEV014-text-analyzer/src/)
 
 ## Introducción a la aplicación
 Como parte de un enfoque al cliente, he diseñado esta aplicación para ser utilizada por estudiantes universitarios con idioma español, para que puedan realizar el conteo de las palabras que deseen citadar en sus documentos de investigación.
